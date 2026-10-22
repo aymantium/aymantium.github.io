@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+  <section class="section">
+    <h1>Search</h1>
+    <form method="get" action="{{ base_path }}/search/" style="margin:1.5em 0;">
+      <input type="search" name="q" placeholder="Search by title, tag, or date" style="font-family:inherit; font-size:1rem; padding:0.5em; background:transparent; color:var(--fg); border:1px solid var(--border); width:100%; max-width:400px;">
+      <button type="submit" style="font-family:inherit; font-size:1rem; padding:0.5em 1em; background:var(--fg); color:var(--bg); border:none; margin-left:0.5em;">Search</button>
+    </form>
+    <p style="color:var(--fg-muted); font-size:0.85rem;">Static index. Use your browser's find-in-page, or browse by section.</p>
+    <div class="section__head"><h2 class="section__title">All entries</h2></div>
+    <ul class="list">
+      {% for e in entries %}
+      <li>
+        <div class="list__row">
+          <span class="list__date">{{ e.date_str }}</span>
+          <a class="list__title" href="{{ e.url | u }}">{{ e.title }}</a>
+          <span class="list__meta">{{ e.section }}</span>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+</div>
+{% endblock %}

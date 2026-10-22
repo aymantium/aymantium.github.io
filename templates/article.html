@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="narrow">
+  <article class="article">
+    <p style="font-size:0.8rem; text-transform:uppercase; letter-spacing:0.12em; opacity:0.6; margin-bottom:0.4em;">{{ date_str }}{% if updated_str %} · updated {{ updated_str }}{% endif %}</p>
+    <h1>{{ title }}</h1>
+    {% if tags %}<div class="tag-list">{% for t in tags %}<a class="tag" href="{{ (base_path ~ '/tags/' ~ (t | slug) ~ '/') }}">{{ t }}</a>{% endfor %}</div>{% endif %}
+    <div class="article__meta">
+      {% if description %}<span>{{ description }}</span>{% endif %}
+    </div>
+    {{ body_html | safe }}
+  </article>
+  {% if prev or next %}
+  <div class="nav-pair">
+    {% if prev %}<a href="{{ prev.url | u }}">← {{ prev.title }}</a>{% else %}<span></span>{% endif %}
+    {% if next %}<a href="{{ next.url | u }}">{{ next.title }} →</a>{% endif %}
+  </div>
+  {% endif %}
+</div>
+{% endblock %}

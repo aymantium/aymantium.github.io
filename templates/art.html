@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+  <section class="section">
+    <div class="section__head"><h1>Art</h1><span class="section__title">{{ entries | length }} entries</span></div>
+    <div class="card-row">
+      {% for a in entries %}
+      <a class="art-tile" href="{{ a.url | u }}">
+        {% if a.cover %}<img src="{{ a.cover | u }}" alt="{{ a.title }}" width="800" height="600" loading="lazy">{% endif %}
+        <div class="art-tile__body">
+          <div class="art-tile__title">{{ a.title }}</div>
+          <div style="opacity:0.6;">{{ a.medium | default('') }} · {{ a.date_str }}</div>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+  </section>
+</div>
+{% endblock %}

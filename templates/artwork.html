@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+  <article>
+    <p style="font-size:0.8rem; text-transform:uppercase; letter-spacing:0.12em; opacity:0.6; margin-bottom:0.4em;">{{ medium | default('artwork') }} · {{ date_str }}</p>
+    <h1>{{ title }}</h1>
+    {% if tags %}<div class="tag-list">{% for t in tags %}<a class="tag" href="{{ (base_path ~ '/tags/' ~ (t | slug) ~ '/') }}">{{ t }}</a>{% endfor %}</div>{% endif %}
+    {% if images %}
+    <div style="margin:2em 0;">
+      {% for img in images %}
+      <figure style="margin:0 0 2em;">
+        <img src="{{ img.src | u }}" alt="{{ img.alt }}" {% if img.width %}width="{{ img.width }}"{% endif %} {% if img.height %}height="{{ img.height }}"{% endif %} loading="lazy">
+        {% if img.caption %}<figcaption style="font-size:0.8rem; color:var(--fg-muted); margin-top:0.4em;">{{ img.caption }}</figcaption>{% endif %}
+      </figure>
+      {% endfor %}
+    </div>
+    {% endif %}
+    {% if body_html %}<div class="article">{{ body_html | safe }}</div>{% endif %}
+  </article>
+  {% if prev or next %}
+  <div class="nav-pair">
+    {% if prev %}<a href="{{ prev.url | u }}">← {{ prev.title }}</a>{% else %}<span></span>{% endif %}
+    {% if next %}<a href="{{ next.url | u }}">{{ next.title }} →</a>{% endif %}
+  </div>
+  {% endif %}
+</div>
+{% endblock %}

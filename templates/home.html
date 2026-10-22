@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+  <section class="section">
+    <h1>Aymantium</h1>
+    <p style="max-width:60ch; color:var(--fg-muted);">Artist and musician based in Morocco. This site gathers releases, artwork, writing, and references in one place.</p>
+    <nav class="tag-list" aria-label="Platforms">
+      <a class="tag" href="https://ayman.bandcamp.com/" target="_blank" rel="noopener noreferrer">&raquo; bandcamp</a>
+      <a class="tag" href="https://open.spotify.com/artist/2JvKOGsEipFYuMmSPHJlxi" target="_blank" rel="noopener noreferrer">&raquo; spotify</a>
+      <a class="tag" href="https://soundcloud.com/aymantium" target="_blank" rel="noopener noreferrer">&raquo; soundcloud</a>
+      <a class="tag" href="https://www.instagram.com/aymantium/" target="_blank" rel="noopener noreferrer">&raquo; instagram</a>
+      <a class="tag" href="mailto:aymantium@gmail.com">&raquo; email</a>
+      <a class="tag" href="https://rateyourmusic.com/artist/aymantium" target="_blank" rel="noopener noreferrer">&raquo; rate your music</a>
+      <a class="tag" href="https://www.subvert.fm/aymantium" target="_blank" rel="noopener noreferrer">&raquo; Subvert</a>
+    </nav>
+  </section>
+
+  <div class="home-grid">
+    <div>
+      {% if recent_releases %}
+      <section class="section">
+        <div class="section__head"><h2 class="section__title">Recent releases</h2><a href="{{ base_path }}/music/">All →</a></div>
+        <ul class="list">
+          {% for r in recent_releases %}
+          <li>
+            <div class="list__row">
+              <span class="list__date">{{ r.date_str }}</span>
+              <a class="list__title" href="{{ r.url | u }}">{{ r.title }}</a>
+              <span class="list__meta">{{ r.type | default('release') }}</span>
+            </div>
+          </li>
+          {% endfor %}
+        </ul>
+      </section>
+      {% endif %}
+
+      {% if recent_writing %}
+      <section class="section">
+        <div class="section__head"><h2 class="section__title">Recent writing</h2><a href="{{ base_path }}/writing/">All →</a></div>
+        <ul class="list">
+          {% for a in recent_writing %}
+          <li>
+            <div class="list__row">
+              <span class="list__date">{{ a.date_str }}</span>
+              <a class="list__title" href="{{ a.url | u }}">{{ a.title }}</a>
+            </div>
+            {% if a.description %}<p style="margin:0.4em 0 0; font-size:0.85rem; color:var(--fg-muted);">{{ a.description }}</p>{% endif %}
+          </li>
+          {% endfor %}
+        </ul>
+      </section>
+      {% endif %}
+    </div>
+
+    <aside>
+      {% if recent_art %}
+      <section class="section">
+        <div class="section__head"><h2 class="section__title">Selected art</h2><a href="{{ base_path }}/art/">All →</a></div>
+        <div class="card-row" style="grid-template-columns:1fr;">
+          {% for art in recent_art %}
+          <a class="art-tile" href="{{ art.url | u }}">
+            {% if art.cover %}<img src="{{ art.cover | u }}" alt="{{ art.title }}" width="400" height="300" loading="lazy">{% endif %}
+            <div class="art-tile__body">
+              <div class="art-tile__title">{{ art.title }}</div>
+              <div style="opacity:0.6;">{{ art.medium | default('') }} · {{ art.date_str }}</div>
+            </div>
+          </a>
+          {% endfor %}
+        </div>
+      </section>
+      {% endif %}
+
+      {% if announcements %}
+      <section class="section">
+        <div class="section__head"><h2 class="section__title">Now</h2></div>
+        <ul class="list">
+          {% for n in announcements %}
+          <li><p style="margin:0;">{{ n }}</p></li>
+          {% endfor %}
+        </ul>
+      </section>
+      {% endif %}
+    </aside>
+  </div>
+</div>
+{% endblock %}

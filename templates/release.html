@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+  <article class="release">
+    <div>
+      {% if cover %}
+      <div class="release__cover"><img src="{{ cover | u }}" alt="{{ title }}" width="480" height="480" loading="lazy"></div>
+      {% endif %}
+    </div>
+    <div>
+      <p style="font-size:0.8rem; text-transform:uppercase; letter-spacing:0.12em; opacity:0.6; margin-bottom:0.4em;">{{ type | default('release') }} · {{ date_str }}</p>
+      <h1>{{ title }}</h1>
+      {% if tags %}<div class="tag-list">{% for t in tags %}<a class="tag" href="{{ (base_path ~ '/tags/' ~ (t | slug) ~ '/') }}">{{ t }}</a>{% endfor %}</div>{% endif %}
+      <dl class="release__meta">
+        {% if recording %}<dt>Recording</dt><dd>{{ recording }}</dd>{% endif %}
+        {% if credits %}<dt>Credits</dt><dd>{{ credits }}</dd>{% endif %}
+        {% if updated_str %}<dt>Updated</dt><dd>{{ updated_str }}</dd>{% endif %}
+      </dl>
+      {% if body_html %}<div class="article">{{ body_html | safe }}</div>{% endif %}
+      {% if tracklist %}
+      <h2>Tracklist</h2>
+      <ol class="tracklist">
+        {% for t in tracklist %}<li>{{ t }}</li>{% endfor %}
+      </ol>
+      {% endif %}
+      {% if links %}
+      <h2>Links</h2>
+      <ul class="list">
+        {% for name, url in links.items() %}
+        <li><a href="{{ url }}" rel="noopener noreferrer" target="_blank">{{ name }}</a></li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+    </div>
+  </article>
+  {% if prev or next %}
+  <div class="nav-pair">
+    {% if prev %}<a href="{{ prev.url | u }}">← {{ prev.title }}</a>{% else %}<span></span>{% endif %}
+    {% if next %}<a href="{{ next.url | u }}">{{ next.title }} →</a>{% endif %}
+  </div>
+  {% endif %}
+</div>
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+  <section class="section">
+    <div class="section__head"><h1>Music</h1><span class="section__title">{{ entries | length }} releases</span></div>
+    <p style="color:var(--fg-muted); max-width:60ch;">Chronological archive of releases.</p>
+    <ul class="list">
+      {% for r in entries %}
+      <li>
+        <div class="list__row">
+          <span class="list__date">{{ r.date_str }}</span>
+          <a class="list__title" href="{{ r.url | u }}">{{ r.title }}</a>
+          <span class="list__meta">{{ r.type | default('release') }}</span>
+        </div>
+        {% if r.description %}<p style="margin:0.4em 0 0; font-size:0.85rem; color:var(--fg-muted);">{{ r.description }}</p>{% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+</div>
+{% endblock %}

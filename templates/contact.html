@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="narrow">
+  <section class="section">
+    <h1>Contact</h1>
+    <p>Send a message directly.</p>
+    <form action="mailto:aymantium@gmail.com" method="post" enctype="text/plain" style="display:grid; gap:1em; max-width:480px;">
+      <label style="display:grid; gap:0.3em;">
+        <span>Name</span>
+        <input type="text" name="name" style="font-family:inherit; padding:0.5em; background:transparent; color:var(--fg); border:1px solid var(--border);">
+      </label>
+      <label style="display:grid; gap:0.3em;">
+        <span>Email</span>
+        <input type="email" name="email" style="font-family:inherit; padding:0.5em; background:transparent; color:var(--fg); border:1px solid var(--border);">
+      </label>
+      <label style="display:grid; gap:0.3em;">
+        <span>Message</span>
+        <textarea name="message" rows="6" style="font-family:inherit; padding:0.5em; background:transparent; color:var(--fg); border:1px solid var(--border);"></textarea>
+      </label>
+      <button type="submit" style="font-family:inherit; padding:0.6em 1em; background:var(--fg); color:var(--bg); border:none; cursor:pointer;">Send</button>
+    </form>
+    <p style="margin-top:1.5em; font-size:0.85rem; color:var(--fg-muted);">Or email directly: <a href="mailto:aymantium@gmail.com">aymantium@gmail.com</a></p>
+  </section>
+</div>
+{% endblock %}

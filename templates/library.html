@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+  <section class="section">
+    <div class="section__head"><h1>Library</h1><span class="section__title">{{ entries | length }} entries</span></div>
+    <p style="color:var(--fg-muted); max-width:60ch;">References, records, texts, and other material kept close.</p>
+    <div>
+      {% for e in entries %}
+      <div class="library-entry">
+        <div class="library-entry__title">{% if e.url %}<a href="{{ e.url | u }}">{{ e.title }}</a>{% else %}{{ e.title }}{% endif %}</div>
+        <div class="library-entry__meta">
+          {% if e.creator %}{{ e.creator }} · {% endif %}{{ e.category | default('') }} · {{ e.date_str }}
+        </div>
+        {% if e.description %}<p style="margin:0.4em 0 0; font-size:0.85rem;">{{ e.description }}</p>{% endif %}
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+</div>
+{% endblock %}

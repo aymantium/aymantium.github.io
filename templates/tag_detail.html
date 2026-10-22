@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+  <section class="section">
+    <div class="section__head"><h1>Tag: {{ tag }}</h1><span class="section__title">{{ entries | length }} entries</span></div>
+    <ul class="list">
+      {% for e in entries %}
+      <li>
+        <div class="list__row">
+          <span class="list__date">{{ e.date_str }}</span>
+          <a class="list__title" href="{{ e.url | u }}">{{ e.title }}</a>
+          <span class="list__meta">{{ e.section }}</span>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+</div>
+{% endblock %}
