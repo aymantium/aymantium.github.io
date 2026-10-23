@@ -245,5 +245,18 @@ pre code { background: none; padding: 0; }
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; animation: none !important; }
 }
+
+.bottom-image {
+  position: fixed;
+  bottom: 0px;
+  right: 88%;
+  transform: translateX(-50%);
+
+  width: 140px;
+  object-fit: contain;
+
+  z-index: 1000;
+}
+
 EOF
 echo done
