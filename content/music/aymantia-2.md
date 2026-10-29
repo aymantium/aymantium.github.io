@@ -38,19 +38,7 @@ recording: "Home studio. Mixed and mastered by Aymantium."
 
 # AYMANTIA 2
 
-AYMANTIA 2 comes after AYMANTIA 1, the release that started this whole project
+I just released AYMANTIA 2. Like the first one, it's a yearly snapshot of where I am musically and personally. A way to document a year before moving on to the next.
 
-this one keeps the idea of a recurring ritual, but it takes a different shape
+No rules, no fixed genre. I want you to actually listen to this stuff, take it apart, and get lost in the guitar layers and textures.
 
-it moves between different sounds, from heavier to softer, without staying in one place for too long
-
-it has a light spring feeling around it, it gives a sense of life coming back after days of dryness, something slowly becoming alive again
-
-everything was recorded in my room, so it keeps that personal and raw feeling.
-
-bonus tracks are included with purchase
-
-Doo planet instrumental 
-No frame instrumental
-Demonize instrumental
-Selfless substance instrumental

@@ -26,8 +26,24 @@ recording: "Home studio. Mixed and mastered by Aymantium."
 
 # AYMANTIA
 
-AYMANTIA is my first release of this project, a raw, personal journey through sound, emotion, and a few inside jokes only I might fully get (or a small portion of humans).
+**AYMANTIA** is my first more personal release. A memo to my future self.
 
-This project is a reflection of who I am, how I feel, and how I see the world. It's not about perfect structure or clear answers. It's about expression.
+The project that started everything was [**Vecraft**](https://vecraft.bandcamp.com/). Back then, I was deep into Buckethead and Maudlin of the Well, discovering what you can do when you experiment without rules. That mindset is still part of everything I make.
 
-Each track holds a piece of me, but more importantly, it’s yours to experience however you want.
+I see each release as a snapshot of where I was musically and personally. **Aymantia is exactly that.** Documenting myself, discovering new things, leaving a map behind.
+
+It was short-lived because I was already itching to start the bigger **Aymantium** project. Still, I plan to release Aymantia every year, turning it into a living memorial. Aymantia 1, 2, 3… each one a time capsule.
+
+### What Was Playing in My Head
+
+- **Porcupine Tree**: *Trains*, *Open Car*
+- **Tool**, **Riverside**, **Strawbs**
+- **Emerson, Lake & Palmer**, **Gentle Giant**
+- **OSI**: *Blood*
+- **The Brian Jonestown Massacre**: *Anemone*, *Spacegirl*, *When I Was Yesterday*
+- **Rush**: *Seven Cities of Gold*, *BU2B*
+- **Ved Buens Ende**: *A Mask in the Mirror*
+- **CON**: *Life Sentence* (live)
+- And a lot more.
+
+This stuff is part of Aymantia, whether you hear it directly or not. It's the soil it grew from.

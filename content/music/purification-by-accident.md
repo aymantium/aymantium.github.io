@@ -17,15 +17,23 @@ tags:
   - stoner
   - Rabat
 tracklist:
+  - "Mint Dove"
+  - "Lixus"
   - "Vecraft's Thunder"
   - "Nomad Monad"
   - "Free(K)"
   - "My Bad"
   - "ADHD Musik"
+  - "Study ``01"
 credits: "Written and recorded by Aymantium."
 recording: "Home studio. Mixed and mastered by Aymantium."
 ---
 
 # PURIFICATION BY ACCIDENT
 
-PURIFICATION BY ACCIDENT - is a “Conscious Figure” that sounds like inside a self-diagnosed ADHD brain trying to chill.
+Raw, unpolished, and all over the place. Pure “Conscious Figure” energy.
+
+I call it **ADHD Metal**. Not a real genre (yet), just music that refuses to stay in one lane. Metal, atmosphere, improvisation, and whatever else sneaks in.
+
+Stream it on Bandcamp and let the accident purify you.
+

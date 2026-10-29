@@ -31,8 +31,16 @@ recording: "Home studio. Mixed and mastered by Aymantium."
 
 # Drilltone Wisdom
 
-This album is a mystical journey inward ,a solitary walk through the woods, where the silence around you amplifies the chaos within. Built around a handmade, microtonal instrument crafted from forsaken materials and inspired by Amazigh sound, the music leans fully into experimentation. It reflects the influence of boundary-pushing artists like The Microphones and other out-of-the-box acts that reshaped how I think about sound.
+This release started with a handmade instrument I built out of instinct. No plan, just the need to make something. That sound shaped everything that followed.
 
-Each track is a fragment of introspection, moments of doubt, realization, drift, and the quiet clarity that comes when you're far from everything but your own thoughts. The sound is raw and imperfect by design: a deeply personal, fully DIY expression that embraces randomness, dissonance, and emotional weight.
+I was listening to [The Glow Pt. 2 by The Microphones](https://pwelverumandsun.bandcamp.com/album/the-glow-pt-2) and [Seeking Darkness by Huremic](https://huremic.bandcamp.com/album/seeking-darkness), which probably influenced the loose, fragile, unpredictable DIY approach.
 
-The album moves through phases of separation, confusion, and eventual merge which are the emotional shifts we all experience.
+The middle section, *Something Is Not Quite There*, moves through different phases, almost like a rite of passage. *Fade* opens with a recorder/duct flute piece before things turn inward, drift apart, and slowly come together again through *Separation*, *Drift*, and *Merge*.
+
+I didn't expect people to connect with it so deeply.
+
+Roadkill described it as a hypnotic, mysterious soundtrack that follows the listener, while K-LIMOV called it “a very original and hypnotic project!”
+
+ok-pin shared a very personal interpretation of *Drilltone Wisdom*, describing it as confronting the negative voices in your head. What stuck with me was how the ending felt like an ongoing battle rather than a clear victory.
+
+It's wild to see something so personal connect with people in ways I never expected.

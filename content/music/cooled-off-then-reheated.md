@@ -31,14 +31,30 @@ recording: "Home studio. Mixed and mastered by Aymantium."
 
 # Cooled off, Then Reheated
 
-SIDE 1: "Cooled off, Then Reheated – Pour Water" - indie
-1. Embrace The Waters
-2. Albuterol Nights
-3. Live in The Woods
-4. Become a Neo-Hermit
+This release is kinda funny to me now.
 
-SIDE 2: "Cooled off, Then Reheated – Water Power" - breakcore
-5. Broken Brakes
-6. Protoshock
-7. Brain Fountains
-8. Sine Brix
+I started it as an indie rock-ish project. Four tracks done, chill vibes, woods, being alone, figuring stuff out.
+
+**SIDE 1 — “Pour Water”**
+- Embrace The Waters
+- Albuterol Nights
+- Live in The Woods
+- Become a Neo-Hermit
+
+Then I discovered breakcore 💀 and completely switched directions instead of blending the two.
+
+**SIDE 2 — “Water Power”**
+- Broken Brakes
+- Protoshock
+- Brain Fountains
+- Sine Brix
+
+I was going off what I thought breakcore should sound like, partly based on that [Venetian Snares definition](https://www.youtube.com/watch?v=JehJW4lyq7M). Listening back now, I cringe a bit, especially at the whole “water in breaks” thing 😭
+
+But it still kinda counts lol.
+
+**Cooled off = indie. Reheated = breakcore.**
+
+Two vibes, one release, no transition. I just kept it like that.
+
+If you like it, you like it 👍
